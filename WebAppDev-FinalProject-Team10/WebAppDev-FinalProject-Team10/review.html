@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+	   <!--
+	      GEat
+	      Ge Song, Zhenyi Liu, Jiaming Zhang
+
+	      Filename: review.html
+	   -->
+	   <meta charset="utf-8" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1" />
+	   <title>GEat Write Reveiw</title>
+	   <link href="home.css" rel="stylesheet">
+	   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <script type="text/javascript" language="javascript" src="review.js">
+	   </script>
+	   <script type="text/javascript" language="javascript" src="review_history.js"></script>
+	</head>
+
+	<body>
+		<nav class="container-fluid" id="header">
+			<div class="row align-items-start">
+				<a href="home.html" class="col">Home</a>
+				<a href="review.html" class="col">Write a Review</a>
+				<a href="GWorld_Restaurant.html" class="col">GWorld Resturant</a>
+				<a href="Map.html" class="col">Resturant Map</a>
+			</div>
+		</nav>
+		<div class="container-fluid" id="header">
+			<div class="row">
+				<img src="pic/wheretoeat.png">
+			</div>
+		</div>
+		<br>
+		<div class="container-fluid" id="write_review">
+			<form id="new_review" method="post">
+			<fieldset>
+				<legend>New Review</legend>
+				<div class="row">
+					<div class="col">
+						<label for="rest_name">Resturant Name:</label>
+					</div>
+					<div class="col">
+						<input type="text" id="rest_name">
+					</div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col">
+						<label for="cust_name">Your Name:</label>
+					</div>
+					<div class="col">
+						<input type="text" id="cust_name">
+					</div>
+					<div class="col"></div>
+					<div class="col"></div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col">
+						<label for="comment">Comment:</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-auto">
+						<textarea id="comment"></textarea>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col">
+						<div class="stars" id="star">
+			                <input class="star star-5" id="star-5" type="radio" name="star" value="5" /> 
+			                <label class="star star-5" for="star-5"></label> 
+			                <input class="star star-4" id="star-4" type="radio" name="star" value="4" /> 
+			                <label class="star star-4" for="star-4"></label> 
+			                <input class="star star-3" id="star-3" type="radio" name="star" value="3" /> 
+			                <label class="star star-3" for="star-3"></label> 
+			                <input class="star star-2" id="star-2" type="radio" name="star" value="2" /> 
+			                <label class="star star-2" for="star-2"></label> 
+			                <input class="star star-1" id="star-1" type="radio" name="star" value="1" /> 
+			                <label class="star star-1" for="star-1"></label> 
+			            </div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<input type="button" value="Submit" onclick="update_review_list()">
+					</div>
+				</div>
+			</fieldset>
+		</form>
+		</div>
+		
+
+
+	</body>
+</html>

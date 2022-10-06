@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+	   <!--
+	      GEat
+	      Ge Song, Zhenyi Liu, Jiaming Zhang
+
+	      Filename: GWorld_Restaurant.html
+	   -->
+	   <meta charset="utf-8" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1" />
+	   <title>GWrold Resturant</title>
+	   <link href="GWorld_Restaurant.css" rel="stylesheet">
+	   <script type="text/javascript" language="javascript" src="GWorld_Restaurant.js"></script>
+	   <script type="text/javascript" language="javascript" src="vote_history.js"></script>
+	   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<nav class="container-fluid" id="header">
+			<div class="row align-items-start">
+				<a href="home.html" class="col">Home</a>
+				<a href="review.html" class="col">Write a Review</a>
+				<a href="GWorld_Restaurant.html" class="col">GWorld Restaurant</a>
+				<a href="Map.html" class="col">Restaurant Map</a>
+			</div>
+		</nav>
+		<div class="container-fluid" id="header">
+			<div class="row">
+				<img src="pic/wheretoeat.png">
+			</div>
+		</div>
+
+		<aside>
+			<h1>GWorld Compatible Restaurant</h1>
+			<br>
+			<ul id="comp_list">
+				<li>&pizza</li>
+				<li>7-11</li>
+				<li>Abunai Poke</li>
+				<li>Asia 54</li>
+				<li>Baja Fresh</li>
+				<li>Beefsteak</li>
+				<li>Bindaas</li>
+				<li>Bodega Spanish Tapas & Lounge</li>
+				<li>Brooklyn Sandwich Co</li>
+				<li>Butter Chicken Company</li>
+				<li>California Tortilla</li>
+				<li>Captain Cookie & The Milk Man</li>
+				<li>Carvings</li>
+				<li>Charmthai</li>
+				<li>Chick-fil-A</li>
+				<li>Chipotle</li>
+				<li>Chop't Creative Salad Co</li>
+				<li>Circle Bistro</li>
+				<li>Crepeaway</li>
+				<li>CVS Pharmacy</li>
+				<li>DC Pizza</li>
+				<li>Devon & Blakely</li>
+				<li>Domino's Pizza</li>
+				<li>Duke's Grocery</li>
+				<li>Dupont FreshFarm Market</li>
+				<li>Flavors of India</li>
+				<li>FLower Child</li>
+				<li>Froggy Bottom Pub</li>
+				<li>GCDC: Grilled Cheese Bar</li>
+				<li>Gong Cha</li>
+				<li>GRK Fresh Greek</li>
+				<li>GW Deli</li>
+				<li>GWU Hospital Cafeteria</li>
+				<li>Healthy Fresh Meals</li>
+				<li>Higher Grounds Cafe</li>
+				<li>HipCityVeg</li>
+				<li>HomeSlyce</li>
+				<li>Jetties</li>
+				<li>Juan Valdez Cafe</li>
+				<li>Kin's Sushi</li>
+				<li>Los Cuates Restaurant</li>
+				<li>Magic Gourd Restaurant</li>
+				<li>Manny & Olga's</li>
+				<li>Muncheez</li>
+				<li>One Fish, Two Fish</li>
+				<li>Paisano's Pizza</li>
+				<li>Panera Bread</li>
+				<li>Papa John's Pizza</li>
+				<li>Peet's Coffee</li>
+				<li>Pelham Commons Cafe</li>
+				<li>Pizza Movers & Calzones</li>
+				<li>Point Chaud Cafe & Crepes</li>
+				<li>Poppabox</li>
+				<li>Potbelly</li>
+				<li>Quick Bite</li>
+				<li>RAWish</li>
+				<li>Rolling Cow</li>
+				<li>Roti</li>
+				<li>Safeway</li>
+				<li>Say Cheese!</li>
+				<li>SecreTea</li>
+				<li>Sol Mexican Grill</li>
+				<li>South Block</li>
+				<li>Starbucks</li>
+				<li>Subway</li>
+				<li>Surfside</li>
+				<li>Sweetgreen</li>
+				<li>Swizzler</li>
+				<li>Taj of India</li>
+				<li>Tasty Kabob</li>
+				<li>Teashi</li>
+				<li>The House of Falafel</li>
+				<li>Thunder Burger n Bar</li>
+				<li>Tonic @ Quigley's Pharmacy</li>
+				<li>Toryumon Japanese House</li>
+				<li>Uptowner Cafe</li>
+				<li>Wawa</li>
+				<li>White House FreshFarm Market</li>
+				<li>WHole Foods Market</li>
+				<li>Wingo's</li>
+				<li>Wiseguy Pizza</li>
+			</ul>
+		</aside>
+
+		<section>
+			<div class="container-fluid" id="rank">
+				<div class="row">
+					<h1>Which Restaurant Should be GWrold Compatible?</h1>
+					<br>
+				</div>
+				<div class="row align-items-center">
+					<div class="col-5">
+						<ol id="rank_name">
+							<script type="text/javascript">
+								print_rank_list();
+							</script>
+						</ol>
+					</div>
+					<div class="col-3">
+						<ul id="rank_progress">
+							<script type="text/javascript">
+								print_progress_list();
+							</script>
+						</ul>
+					</div>
+					<div class="col-1">
+						<ul id="rank_progress">
+							<script type="text/javascript">
+								print_progress_list_count();
+							</script>
+						</ul>
+					</div>
+					<div class="col-1">
+						<ul id="rank_vote">
+							<script type="text/javascript">
+								print_vote_list();
+							</script>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<br><br><br>
+				</div>
+				<div class="row align-items-center">
+					<div class="col">
+						Enter a Restaurant Name:
+					</div>
+					<div class="col">
+						<input type="text" id="rest_name">
+					</div>
+					<div class="col">
+						<button for="rest_name" value="vote" onclick="add_rank();">Add</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</body>
+
+
+
+</html>

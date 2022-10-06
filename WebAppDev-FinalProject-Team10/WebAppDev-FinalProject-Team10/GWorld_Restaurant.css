@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+
+* {
+	font-family: 'Sora', sans-serif;
+}
+
+nav {
+	background-color: #0397d6;
+}
+
+nav a {
+	font-size: 20px;
+	color: white;
+	padding: 0px 20px;
+	text-decoration: none;
+	text-align: center;
+}
+
+nav a:hover {
+	background-color: #084166;
+	color: white;
+}
+
+
+
+section h1 {
+	margin: 10px;
+}
+
+aside {
+	color: white;
+	background-color: #0397d6;
+	float: left;
+	width: 25%;
+	padding: 15px;
+}
+
+section {
+	float: right;
+	width: 74%;
+	padding: 10px;
+	margin-left: 5px;
+}
+
+section li {
+	margin-top: 30px;
+}
+
+#rank_progress, #rank_vote {
+	list-style: none;
+}
+
+button {
+	border: 1px solid #084166;
+	background-color: #0397d6;
+	color: white;
+}
+
+
+
+
+
+
+
+

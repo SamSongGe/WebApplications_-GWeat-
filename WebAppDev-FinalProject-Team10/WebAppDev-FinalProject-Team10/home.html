@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+	   <!--
+	      GEat
+	      Ge Song, Zhenyi Liu, Jiaming Zhang
+
+	      Filename: home.html
+	   -->
+	   <meta charset="utf-8" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1" />
+	   <title>GEat Homepage</title>
+	   <link href="home.css" rel="stylesheet">
+	   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	   <script type="text/javascript" language="javascript" src="review.js">
+	   </script>
+	   <script type="text/javascript" language="javascript" src="review_history.js"></script>
+	   
+	   <link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<nav class="container-fluid" id="header">
+			<div class="row align-items-start">
+				<a href="home.html" class="col">Home</a>
+				<a href="review.html" class="col">Write a Review</a>
+				<a href="GWorld_Restaurant.html" class="col">GWorld Resturant</a>
+				<a href="Map.html" class="col">Resturant Map</a>
+			</div>
+		</nav>
+		<div class="container-fluid" id="header">
+			<div class="row">
+				<img src="pic/wheretoeat.png">
+			</div>
+		</div>
+
+		<div calss="container" id="search">
+			<div class="row row-cols-1">
+				<div class="col" style="height: 300px"></div>
+				<div class="col" style="height: 150px">
+					<form>
+						<input type="text" id="search_text" placeholder="Search...">
+						<img id="search_icon" src="pic/search_icon.png" onclick="search_on_map();">
+						
+					</form>
+				</div>
+				<div class="col" style="height: 150px"></div>
+			</div>
+		</div>
+
+		<div class="container-fluid" id="review_list">
+			<script type="text/javascript">
+				post_review();
+			</script>
+		</div>
+
+	</body>
+
+</html>
